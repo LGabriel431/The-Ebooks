@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Ebooks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #005f99;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .ebook-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .ebook-item {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        .ebook-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .ebook-item h3 {
+            margin: 10px 0;
+        }
+        .ebook-item p {
+            font-size: 14px;
+        }
+        .ebook-item a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #005f99;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .ebook-item a:hover {
+            background-color: #004080;
+        }
+        footer {
+            background-color: #005f99;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-form {
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #005f99;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja de Ebooks</h1>
+    </header>
+    <section class="ebook-list">
+        <div class="ebook-item">
+            <img src="capa1.jpg" alt="Ebook 1">
+            <h3>Título do Ebook 1</h3>
+            <p>Descrição breve do Ebook 1.</p>
+            <a href="#">Comprar</a>
+        </div>
+        <div class="ebook-item">
+            <img src="capa2.jpg" alt="Ebook 2">
+            <h3>Título do Ebook 2</h3>
+            <p>Descrição breve do Ebook 2.</p>
+            <a href="#">Comprar</a>
+        </div>
+        <!-- Adicione mais ebooks conforme necessário -->
+    </section>
+    <footer>
+        <h2>Contato</h2>
+        <div class="contact-form">
+            <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" rows="4" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <p>&copy; 2024 Loja de Ebooks. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
